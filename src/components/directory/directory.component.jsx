@@ -1,6 +1,6 @@
 import React from "react";
 import "./directory.styles.scss";
-import { MenuItem } from "../menu-items/menu-items.component";
+import MenuItem from "../menu-items/menu-items.component";
 
 class Directory extends React.Component {
   constructor() {
@@ -51,6 +51,7 @@ class Directory extends React.Component {
             key={item.id}
             image={item.imageUrl}
             size={item.size}
+            link={item.linkUrl}
           />
         ))}
       </div>
